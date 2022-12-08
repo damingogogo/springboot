@@ -1,0 +1,19 @@
+server:
+  port: 8086
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/deng?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+shiro:
+  enabled: true
+  redis-manager:
+    host: 127.0.0.1:6379
+login:
+  jwt:
+    secret: VXt@pHe8lhfbpT#1umxkv1yh6e254kga
+    expire: 3600
+    header: Authorization
